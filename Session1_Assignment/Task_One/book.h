@@ -49,7 +49,7 @@ public:
 
     void displayBookDetails()
     {
-        std::cout << "Title: " << this->title << "\n";
+        std::cout << "\nTitle: " << this->title << "\n";
         std::cout << "Author: " << this->author << "\n";
         std::cout << "ISBN: " << this->isbn << "\n";
         std::cout << "Availability: " << (this->isAvailable ? "Available" : "Unavailable\n") << std::endl;
