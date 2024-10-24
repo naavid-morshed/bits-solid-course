@@ -1,8 +1,7 @@
 #include "order.h"
 
-class orderFactory
+class OrderFactory
 {
 public:
     virtual Order createOrder() = 0;
-
 };
