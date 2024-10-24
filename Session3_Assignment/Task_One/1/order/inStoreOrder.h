@@ -2,7 +2,8 @@
 
 #ifndef ONLINE_ORDER_H
 #define ONLINE_ORDER_H
-class InStoreOrder final: public Order
+
+class InStoreOrder final : public Order
 {
 private:
     std::string cashMemo;
