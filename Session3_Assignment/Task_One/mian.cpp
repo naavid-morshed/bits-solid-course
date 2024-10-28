@@ -2,10 +2,6 @@
 #include "./factory/concreteTelephoneOrder.h"
 #include "./factory/concreteInStoreOrder.h"
 
-#include "./order/onlineOrder.h"
-#include "./order/telephoneOrder.h"
-#include "./order/inStoreOrder.h"
-
 #include "./logger/logger.h"
 
 int main() {
