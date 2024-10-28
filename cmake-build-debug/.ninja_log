@@ -1,0 +1,8 @@
+# ninja log v6
+0	300	1730017638194841362	CMakeFiles/bits_solid_course.dir/Session1_Assignment/Task_Three/library_system.cpp.o	d0390ac594606de
+1	281	1730018457915828145	CMakeFiles/bits_solid_course.dir/Session3_Assignment/Task_One/1/main.cpp.o	8b0e5b9916ef4d25
+1	301	1730017638194841362	CMakeFiles/bits_solid_course.dir/Session2_Assignment/Task_Two_AND_Three/main.cpp.o	892a0596c5fe256b
+0	275	1730017638193841304	CMakeFiles/bits_solid_course.dir/Session1_Assignment/Task_One/main.cpp.o	c191a49c96278349
+1	315	1730026176642474344	CMakeFiles/bits_solid_course.dir/Session3_Assignment/Task_One/1/mian.cpp.o	49aec6008951b1f9
+1	261	1730017638194841362	CMakeFiles/bits_solid_course.dir/Session2_Assignment/Task_One/main.cpp.o	3942686f1d33ea3c
+0	21	1730097126810891144	build.ninja	c50318b2132a756f

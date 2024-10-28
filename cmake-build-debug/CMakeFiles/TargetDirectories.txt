@@ -1,0 +1,3 @@
+/home/naavidmorshed/IdeaProjects/bits-solid-course/cmake-build-debug/CMakeFiles/bits_solid_course.dir
+/home/naavidmorshed/IdeaProjects/bits-solid-course/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/naavidmorshed/IdeaProjects/bits-solid-course/cmake-build-debug/CMakeFiles/rebuild_cache.dir

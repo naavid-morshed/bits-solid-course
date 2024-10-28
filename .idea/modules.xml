@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/bits-solid-course.iml" filepath="$PROJECT_DIR$/.idea/bits-solid-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bits_solid_course.iml" filepath="$PROJECT_DIR$/.idea/bits_solid_course.iml" />
     </modules>
   </component>
 </project>
