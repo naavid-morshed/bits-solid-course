@@ -9,6 +9,8 @@ private:
     double salary;
 
 public:
+    virtual ~Employee() = default;
+
     Employee(std::string name, double salary) : name(name), salary(salary) {}
 
     virtual void displayInfo() = 0;
