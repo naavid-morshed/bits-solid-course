@@ -1,16 +1,14 @@
-#include "./orderFactory.h"
-#include "onlineOrder.h"
-#include "./telephoneOrder.h"
-
 #ifndef CONCRETE_TELEPHONE_ORDER
 #define CONCRETE_TELEPHONE_ORDER
 
-class ConcreteTelephoneOrder final : public OrderFactory
-{
+#include "./orderFactory.h"
+#include "telephoneOrder.h"
+
+class ConcreteTelephoneOrder final {
 public:
-    Order createOrder(std::string name, std::string orderId, double price, std::string address, int telephoneNumber)
-    {
-        return TelephoneOrder(name, orderId, price, telephoneNumber);
+    static TelephoneOrder createOrder(std::string name, std::string orderId, const double price,
+                                      const int telephoneNumber) {
+        return {std::move(name), std::move(orderId), price, telephoneNumber};
     }
 };
 

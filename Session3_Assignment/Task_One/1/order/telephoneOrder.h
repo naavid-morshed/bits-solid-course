@@ -1,23 +1,21 @@
-#include "order.h"
-
 #ifndef TELEPHONE_ORDER_H
 #define TELEPHONE_ORDER_H
 
-class TelephoneOrder final : public Order
-{
-private:
+#include "order.h"
+
+class TelephoneOrder final : public Order {
     int telephoneNumber;
 
 public:
-    TelephoneOrder(std::string name, std::string orderId, double price, int telephoneNumber) : Order(name, orderId, price), telephoneNumber(telephoneNumber) {}
+    TelephoneOrder(std::string name, std::string orderId, const double price, const int telephoneNumber) :
+    Order(std::move(name), std::move(orderId), price), telephoneNumber(telephoneNumber) {
+    }
 
-    void setTelephoneNumber(int telephoneNumber)
-    {
+    void setTelephoneNumber(const int telephoneNumber) {
         this->telephoneNumber = telephoneNumber;
     }
 
-    int getTelephoneNumber()
-    {
+    int getTelephoneNumber() const {
         return this->telephoneNumber;
     }
 };

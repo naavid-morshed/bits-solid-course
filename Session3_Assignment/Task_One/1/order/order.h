@@ -1,50 +1,40 @@
-#include <iostream>>
-
 #ifndef ORDER_H
 #define ORDER_H
 
-class Order
-{
-private:
+#include <iostream>
+
+class Order {
     std::string name;
     std::string orderId;
     double price;
 
 public:
-    Order(std::string name, std::string orderId, double price) : name(name), orderId(orderId), price(price)
-    {
+    Order(std::string name, std::string orderId, const double price) : name(std::move(name)),
+                                                                       orderId(std::move(orderId)), price(price) {
     }
 
-public:
-    void setName(std::string name)
-    {
-        this->name = name;
+    void setName(std::string name) {
+        this->name = std::move(name);
     }
 
-    void setOrderId(std::string orderId)
-    {
-        this->orderId = orderId;
+    void setOrderId(std::string orderId) {
+        this->orderId = std::move(orderId);
     }
 
-    void setPrice(double price)
-    {
+    void setPrice(double price) {
         this->price = price;
     }
 
-    std::string getName()
-    {
+    std::string getName() {
         return this->name;
     }
 
-    std::string getOrderId()
-    {
+    std::string getOrderId() {
         return this->orderId;
     }
 
-    double getPrice()
-    {
+    double getPrice() const {
         return this->price;
     }
 };
-
 #endif

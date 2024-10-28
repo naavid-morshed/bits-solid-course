@@ -1,15 +1,15 @@
-#include "./orderFactory.h"
-#include "./inStoreOrder.h"
-
 #ifndef CONCRETE_IN_STORE_ORDER_H
 #define CONCRETE_IN_STORE_ORDER_H
 
-class ConcreteInStoreOrder final : public OrderFactory
+#include "../factory/orderFactory.h"
+#include "../order/inStoreOrder.h"
+
+class ConcreteInStoreOrder final
 {
 public:
-    Order createOrder(std::string name, std::string orderId, double price, std::string cashMemo)
+   static InStoreOrder createOrder(std::string name, std::string orderId, double price, std::string cashMemo)
     {
-        return InStoreOrder(name, orderId, price, cashMemo);
+        return {std::move(name), std::move(orderId), price, std::move(cashMemo)};
     }
 };
 
