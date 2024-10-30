@@ -11,6 +11,10 @@ int main()
                             .setRam("Adata 7500mzh 32GB")
                             .build();
 
+                            computer = ComputerBuilder()
+                            .setCpu("asdf")
+                            .build();
+
     ThirdPartyApiComputer cmp = ComputerAdapter::adaptToTPApiComputer(computer);
 
     computer.toString();
